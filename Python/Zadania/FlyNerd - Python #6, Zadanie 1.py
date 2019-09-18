@@ -37,3 +37,4 @@ else:
       print("Zostały Ci do pełnoletności jeszcze {} lata".format(18-age)) 
     else:
       print("Zostało Ci do pełnoletności jeszcze {} lat".format(18-age))
+      
