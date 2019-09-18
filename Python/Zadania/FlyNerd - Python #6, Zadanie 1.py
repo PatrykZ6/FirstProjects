@@ -1,6 +1,15 @@
-print (1 == 1 and 2 < 1 or 1 != 2)
+# -*- coding: utf8 -*-
 
-print ("keb" not in "kebab")
+"""
+Zapytaj użytkownika o wiek.
+W zależności od wieku zwróć czy użytkownik jest już pełnoletni
+lub ile lat zostało mu do pełnoletności,
+Użytkownikom powyżej 100lat życz 200 ;)
+"""
+
+#print (1 == 1 and 2 < 1 or 1 != 2)
+
+#print ("keb" not in "kebab")
 
 """
 x = range(2, 5)
