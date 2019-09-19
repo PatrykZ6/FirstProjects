@@ -5,7 +5,6 @@ Pozwól użytkownikowi wprowadzić dowolną liczbę imion ciągiem (np.jako jede
 
 """
 
-#imiona = [x for x in input("Wprowadź parę imion oddzielając je spacjami: ").split()]
 imiona = input("Wprowadź parę imion oddzielając je przecinakmi: ").split(",")
 imiona = [x.strip(' ').capitalize() for x in imiona]  #funkcja która usuwa spacje i zmienia na pierwszą dużą literę
 print(imiona)
