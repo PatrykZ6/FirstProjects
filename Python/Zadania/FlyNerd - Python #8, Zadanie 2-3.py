@@ -9,14 +9,16 @@ Stwórz prostą grę zgadywankę. Komputer losuje wartość z przedziału od 1-3
 
 import random
 randomowa_cyfra = random.randint(1, 21)
-print(randomowa_cyfra)
+#print(randomowa_cyfra)
 
 print("Zgadnij cyfrę jaką wylosował komputer od 1-20\n")
 strzal = 0
-proba = 1
+proba = 0
 while (randomowa_cyfra != strzal):
   strzal = int(input("Podaj cyfrę: "))
-  if (randomowa_cyfra != strzal):
-    print("Nie trafiłeś, spróbuj jeszcze raz.")
+  if (randomowa_cyfra < strzal):
+    print("Nie trafiłeś. Podana przez Ciebie liczba jest za duża. Spróbuj jeszcze raz.")
+  elif (randomowa_cyfra > strzal):
+    print("Nie trafiłeś. Podana przez Ciebie liczba jest za mała. Spróbuj jeszcze raz.")
   proba += 1
-print("Brawo! Zgadłeś za {} razem! Liczba którą wylosował komputer to".format(proba), randomowa_cyfra)
+print("Brawo! Zgadłeś za {} razem! Liczba którą wylosował komputer to {}.".format(proba, randomowa_cyfra))
