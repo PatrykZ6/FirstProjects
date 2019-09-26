@@ -1,0 +1,18 @@
+"""
+Mamy klasę zdefiniowaną dla pojazdów – Pojazd. Stwórz dwa nowe obiekty tej klasy: Auto1 i Auto2. Auto1 powinno mieć kolor "czerwony", rodzaj "kabriolet", wartość 60000 i nazwę "Ferrari". Auto2 powinien mieć kolor "niebieski", rodzaj "autobus", wartość 10000 i nazwę "Ikarus".
+"""
+
+class pojazd():
+  auto1 = {
+    "kolor":"czerwony", 
+    "rodzaj":"kabriolet", 
+    "wartość":60000,
+    "nazwa":"ferrari"}
+  auto2 = {
+    "kolor":"niebieski", 
+    "rodzaj":"autobus", 
+    "wartość":10000,
+    "nazwa":"ikarus"}
+
+sprawdzauto = pojazd()
+print(sprawdzauto.auto1["kolor"])
