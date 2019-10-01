@@ -1,0 +1,16 @@
+"""
+Z pomocą listy składanej stwórz nową tablicę nowa na podstawie tablicy liczby. nowa ma się składać z całkowitych części nieujemnych liczb tablicy liczby. Wskazówka: liczbę rzeczywistą możemy zaokrąglić do całkowitej za pomocą int(), np.: int(4.3) da nam 4.
+
+"""
+liczby = [4.3, 5.1, 1.5, 3.14, 3.33333]
+
+#lista stworzona za pomocą pętli for
+lista = []
+for i in range(len(liczby)):
+  liczba = int(liczby[i])
+  lista.append(liczba)
+print (lista)
+
+#lista składana
+nowa = [int(liczby[i]) for i in range(len(liczby))]
+print (nowa)
