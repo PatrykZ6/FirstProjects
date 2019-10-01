@@ -1,0 +1,11 @@
+"""
+Wypisz posortowaną alfabetycznie listę wszystkich funkcji z modułu re, które zawierają słowo find.
+
+"""
+import re
+
+list_all = dir(re)
+
+list_only_find = [key for key in list_all if 'find' in key]
+
+print(', '.join(list_only_find))
