@@ -1,5 +1,6 @@
 # -*- coding: utf8 -*-
 
+
 import random
 
 ileliczb = int(input("Podaj ilość typowanych liczb: "))
