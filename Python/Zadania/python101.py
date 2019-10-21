@@ -2,21 +2,31 @@
 
 import random
 
-try:
-  ileliczb = 0
-  while ileliczb<=0:
-    ileliczb = int(input("Podaj ilość typowanych liczb: "))
-    if ileliczb<=0:
-     print ("Ilość typowanych liczb nie może być równa zeru ani nie może być liczbą ujemną")
+while True:
+  try:
+    ileliczb = 0
+    while ileliczb<=0:
+      ileliczb = int(input("Podaj ilość typowanych liczb: "))
+      if ileliczb<=0:
+        print ("Ilość typowanych liczb nie może być równa zeru ani nie może być liczbą ujemną")
+        continue
+    break
+  except ValueError:
+    print("Błędne dane!")
+    continue
 
-  maksliczba = 0
-  while ileliczb>maksliczba:
-    maksliczba = int(input("Podaj maksymalną losowaną liczbę: "))
-    if ileliczb>maksliczba:
-     print ("Nie możesz podać maksymalnej liczby mniejszej niż ilość typowanych liczb.")
-except ValueError:
-  print("Błędne dane!")
-  exit()
+while True:
+  try:
+    maksliczba = 0
+    while ileliczb>maksliczba:
+      maksliczba = int(input("Podaj maksymalną losowaną liczbę: "))
+      if ileliczb>maksliczba:
+        print ("Nie możesz podać maksymalnej liczby mniejszej niż ilość typowanych liczb.")
+        continue
+    break
+  except ValueError:
+    print("Błędne dane!")
+    continue
 
 
 liczby = set()
@@ -46,7 +56,7 @@ for z in range(3):
   #print(trafione)
   print ("Trafione liczby: {}. Te liczby to: {}".format(len(trafione),(", ".join(str(x) for x in trafione))))
   if (set(strzaly) != set(trafione) and z != 2):
-    print("\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n\nSpróbuj jeszcze raz!")
+    print("\n"+"X"*40+"\n\nSpróbuj jeszcze raz!")
   elif set(strzaly) == set(trafione):
     print("Brawo! Zgadłeś wszystkie liczby :)")
     break
