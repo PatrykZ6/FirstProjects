@@ -1,0 +1,22 @@
+# -*- coding: utf8 -*-
+
+"""
+Napisz program w języku Python, który uzyska różnicę między podaną liczbą a 17, jeśli liczba jest większa niż 17, zwróć podwojoną różnicę bezwzględną.
+"""
+
+liczba = int(input("Podaj liczbę: "))
+wynik = 17 - liczba
+if (wynik < 0):
+  print (wynik*(-1)*2)
+else:
+  print (wynik)
+
+  #-------------------------------------------
+
+def roznica(n):
+  if n <= 17:
+      return 17 - n
+  else:
+      return (n - 17) * 2 
+
+print(roznica(liczba))
