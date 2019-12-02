@@ -1,0 +1,16 @@
+  # -*- coding: utf8 -*-
+
+"""
+Napisz program w języku Python, który wyświetli kalendarz na dany miesiąc i rok. 
+Uwaga: użyj modułu „calendar”.
+"""
+import calendar
+import datetime
+x = datetime.datetime.now()
+print (calendar.month(x.year, x.month))
+
+#----------------------------------------------------
+
+y = int(input("Input the year : "))
+m = int(input("Input the month : "))
+print("\n",calendar.month(y, m))
