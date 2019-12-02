@@ -1,0 +1,11 @@
+# -*- coding: utf8 -*-
+
+"""
+Napisz program w języku Python, który uzyska objętość kuli o promieniu 6.
+"""
+
+import math
+
+R = 6
+V = 4 / 3 * math.pi * R ** 3
+print ("Objętość kuli o promieniu 6j to {:.2f}j".format(V))
