@@ -1,0 +1,19 @@
+# -*- coding: utf8 -*-
+
+"""
+Napisz program w języku Python, który akceptuje liczbę całkowitą (n) i oblicza wartość n + nn + nnn. Idź do edytora Przykładowa wartość n wynosi 2 
+Oczekiwany wynik: 246
+"""
+
+n = int(input("podaj n: "))
+n1 = int("{}".format(n))
+n2 = int("{}{}".format(n,n))
+n3 = int("{}{}{}".format(n,n,n))
+print (n1+n2+n3)
+
+
+a = int(input("Input an integer : "))
+n1 = int( "%s" % a )
+n2 = int( "%s%s" % (a,a) )
+n3 = int( "%s%s%s" % (a,a,a) )
+print (n1+n2+n3)
