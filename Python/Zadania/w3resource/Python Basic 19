@@ -1,0 +1,17 @@
+# -*- coding: utf8 -*-
+
+"""
+Write a Python program to get a new string from a given string where "is" has been added to the front. If the given string already begins with "is" then return the string unchanged.
+
+Napisz program w języku Python, który uzyska nowy ciąg z danego ciągu, w którym z przodu doda „is”. Jeśli podany ciąg zaczyna się od „is”, zwróć ciąg bez zmian.
+
+"""
+
+def isempty(x):
+  if x[0:2] == "is":
+    return x
+  else:
+    return ("is"+x)
+
+print(isempty(str('isempty')))
+print(isempty(str('full')))
