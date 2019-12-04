@@ -1,0 +1,31 @@
+# -*- coding: utf8 -*-
+
+"""
+Write a Python program to calculate the sum of three given numbers, if the values are equal then return three times of their sum.
+
+Napisz program w języku Python, który obliczy sumę trzech podanych liczb, jeśli wartości są równe, zwróć trzykrotność ich sumy.
+"""
+
+liczby = []
+print("Podaj 3 liczby")
+for x in range(3):
+  liczby.append(int(input("{}/3: ".format(x+1))))
+#print(liczby)
+
+if liczby[0] == liczby[1] == liczby [2]:
+  print(3*sum(liczby))
+else:
+  print(sum(liczby))
+
+#------------------------------------------------------
+
+def sum_thrice(x, y, z):
+
+     sum = x + y + z
+  
+     if x == y == z:
+      sum = sum * 3
+     return sum
+
+print(sum_thrice(1, 2, 3))
+print(sum_thrice(3, 3, 3))
