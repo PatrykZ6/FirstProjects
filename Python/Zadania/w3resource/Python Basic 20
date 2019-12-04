@@ -1,0 +1,18 @@
+# -*- coding: utf8 -*-
+
+"""
+Write a Python program to get a string which is n (non-negative integer) copies of a given string.
+
+Napisz program w języku Python, który uzyska ciąg znaków, który jest n (nieujemna liczbama całkowita) razy kopią danego ciągu.
+
+"""
+
+def copies(x,n):
+  if type(n) == int and n >= 0:
+    return str(x)*n
+  else:
+    return ("'n' nie spełnia wymagań!")
+
+print(copies('elo! ',5))
+print(copies('elo! ',-4))
+print(copies(4,20))
