@@ -16,3 +16,14 @@ def copies(x,n):
 print(copies('elo! ',5))
 print(copies('elo! ',-4))
 print(copies(4,20))
+
+#-----------------------------------------
+
+def larger_string(str, n):
+   result = ""
+   for i in range(n):
+      result = result + str
+   return result
+
+print(larger_string('abc', 2))
+print(larger_string('.py', 3))
