@@ -1,0 +1,13 @@
+#-*- coding: utf8 -*-
+
+"""
+Write a Python program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user.
+
+Napisz program w języku Python, który sprawdzi czy podana liczba (podana przez użytkownika) jest parzysta czy nieparzysta, wydrukuj odpowiednią wiadomość dla użytkownika.
+
+"""
+num = int(input("Podaj liczbę: "))
+if num%2 == 0:
+  print (num,"to lczba parzysta")
+else:
+  print (num,"to liczba nieparzysta")
