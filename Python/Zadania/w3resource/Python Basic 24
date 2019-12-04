@@ -1,0 +1,25 @@
+#-*- coding: utf8 -*-
+
+"""
+Write a Python program to test whether a passed letter is a vowel or not.
+
+Napisz program w języku Python, który sprawdzi, czy przekazana litera jest samogłoską, czy nie.
+
+"""
+def litera(x):
+  samogloski = ['a','e','i','o','u','A','E','I','O','U']
+  if x in samogloski:
+    return ("Litera {} jest samogłoską".format(x))
+  else:
+    return ("Litera {} jest spółgłoską".format(x))
+
+print(litera('c'))
+print(litera('A'))
+
+#---------------------------------------------------------
+
+def is_vowel(char):
+    all_vowels = 'aeiou'
+    return char in all_vowels
+print(is_vowel('c'))
+print(is_vowel('e'))
