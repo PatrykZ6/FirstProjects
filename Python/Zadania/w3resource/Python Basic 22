@@ -1,0 +1,32 @@
+#-*- coding: utf8 -*-
+
+"""
+Write a Python program to get the n (non-negative integer) copies of the first 2 characters of a given string. Return the n copies of the whole string if the length is less than 2.
+
+Napisz program w języku Python, który uzyska n (nieujemna liczba całkowita) kopii pierwszych 2 znaków danego ciągu. Zwróć n kopii całego łańcucha, jeśli długość jest mniejsza niż 2.
+
+"""
+
+def kopie(x,n):
+  if type(n) == int and n >= 0:
+    return str(x[0:2])*n
+  else:
+    return "Nie poprawna wartość 'n'!"  
+
+print(kopie('roman',4))
+print(kopie('f',10))
+
+#----------------------------------------
+
+def substring_copy(str, n):
+  flen = 2
+  if flen > len(str):
+    flen = len(str)
+  substr = str[:flen]
+  
+  result = ""
+  for i in range(n):
+    result = result + substr
+  return result
+print(substring_copy('abcdef', 2))
+print(substring_copy('p', 3));
