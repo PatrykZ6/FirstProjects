@@ -1,0 +1,48 @@
+#-*- coding: utf8 -*-
+
+"""
+Write a Python program to compute the greatest common divisor (GCD) of two positive integers.
+
+Napisz program w języku Python, który obliczy największy wspólny dzielnik (NWD) z dwóch liczb całkowitych dodatnich.
+
+"""
+
+liczba1 = 525 #int(input("Podaj pierwszą liczbę: "))
+liczba2 = 2310 #int(input("Podaj drugą liczbę: "))
+
+def liczba(x): 
+  c=2
+  lista_liczba = []
+  while x != 1:
+    if x%c==0:
+      x=x/c
+      lista_liczba.append(int(c))
+      c=2
+    else:
+      c+=1
+  return(set(lista_liczba))
+
+x = list(liczba(liczba1).intersection(liczba(liczba2)))
+
+wynik=1
+for i in range(len(x)):
+  wynik*=x[i]
+
+print("Największy wspólny dzielnk tych liczb to",wynik)
+
+#----------------------------------------------------------
+
+def gcd(x, y):
+    gcd = 1
+    
+    if x % y == 0:
+        return y
+    
+    for k in range(int(y / 2), 0, -1):
+        if x % k == 0 and y % k == 0:
+            gcd = k
+            break  
+    return gcd
+
+print(gcd(12, 17))
+print(gcd(4, 6))
