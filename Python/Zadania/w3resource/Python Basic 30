@@ -1,0 +1,13 @@
+#-*- coding: utf8 -*-
+
+"""
+Write a Python program that will accept the base and height of a triangle and compute the area.
+
+Napisz program w języku Python, który pobierze podstawę i wysokość trójkąta i obliczy pole.
+
+"""
+b = int(input("Podaj długość podstawy: "))
+h = int(input("Podaj wysokość: "))
+p = 1/2*b*h
+
+print("Pole trójkąta to:",int(p))
