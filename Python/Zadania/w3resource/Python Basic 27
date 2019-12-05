@@ -1,0 +1,27 @@
+#-*- coding: utf8 -*-
+
+"""
+Write a Python program to concatenate all elements in a list into a string and return it.
+
+Napisz program w języku Python, który połączyć wszystkie elementy z listy w łańcuch znaków i zwrócić go.
+
+"""
+
+def lista_na_string(x):
+  c=[]
+  for i in range(len(x)):
+    c.append(str(x[i])) 
+  print(('').join(c))
+
+lista_na_string(['K','a','s','i','a'])
+lista_na_string([1,9,9,4])
+
+#-----------------------------------------
+
+def concatenate_list_data(list):
+    result= ''
+    for element in list:
+        result += str(element)
+    return result
+
+print(concatenate_list_data([1, 5, 12, 2]))
