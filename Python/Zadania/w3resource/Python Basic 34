@@ -1,0 +1,30 @@
+#-*- coding: utf8 -*-
+
+"""
+Write a Python program to sum of two given integers. However, if the sum is between 15 to 20 it will return 20.
+
+Napisz program w języku Python, który zsumuje dwie podane liczby całkowite. Jeśli jednak suma wynosi od 15 do 20, zwróci 20.
+"""
+
+def suma(x,y):
+  if 15 <= sum([x,y]) <= 20:
+    return 20
+  else:
+    return sum([x,y]) 
+
+print (suma(5,6))
+print (suma(12,4))
+print(suma(15, 7))
+
+#----------------------------------
+
+def sum(x, y):
+    sum = x + y
+    if sum in range(15, 20):
+        return 20
+    else:
+        return sum
+
+print(sum(10, 6))
+print(sum(10, 2))
+print(sum(10, 12))
