@@ -1,0 +1,21 @@
+"""
+Write a Python program to solve (x + y) * (x + y). 
+
+Napisz program w języku Python do rozwiązania (x + y) * (x + y).
+Test Data : x = 4, y = 3
+Expected Output : (4 + 3) ^ 2) = 49
+"""
+
+def sumator(x,y):
+  wynik = (x + y) * (x + y)
+  return "({} + {}) ^ 2) = {}".format(x,y,wynik)
+
+print(sumator(4,3))
+print(sumator(5,6))
+
+
+#--------------------------------------------------
+
+x, y = 4, 3
+result = x * x + 2 * x * y + y * y
+print("({} + {}) ^ 2) = {}".format(x, y, result))
