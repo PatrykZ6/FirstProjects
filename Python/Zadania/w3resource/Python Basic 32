@@ -1,0 +1,75 @@
+#-*- coding: utf8 -*-
+
+"""
+Write a Python program to get the least common multiple (LCM) of two positive integers. 
+
+Napisz program w języku Python, którym uzyskasz najmniejszą wspólną wielokrotność (NWW) z dwóch liczb całkowitych dodatnich.
+
+
+"""
+
+def nww(a,b):
+  c=2
+  a_set=[a]
+  b_set=[b]
+  while (True):
+    if a_set[c-2] in b_set:
+      x = list(set(a_set).intersection(set(b_set)))
+      return (x[0])
+    else:
+      a_set.append(a*c)
+      b_set.append(b*c)
+      c+=1
+
+print(nww(7,20))
+
+#---------------------------------------------------------
+
+def nww2(a,b):
+  c=2
+  a_set=[a]
+  b_set=[b]
+  while a_set[c-2] not in b_set and b_set[c-2] not in a_set:
+    a_set.append(a*c)
+    b_set.append(b*c)
+    c+=1
+  x = list(set(a_set).intersection(set(b_set)))
+  return (x[0])
+print(nww2(7,20))
+
+#---------------------------------------------------------
+
+def nww2(a,b):
+  c=2
+  d=2
+  a_set=[a]
+  b_set=[b]
+  while a_set[c-2] not in b_set and b_set[d-2] not in a_set:
+    if a_set[c-2] < b_set[-1]:
+      a_set.append(a*c)
+      c+=1
+    else: 
+      b_set.append(b*d)
+      d+=1
+  x = list(set(a_set).intersection(set(b_set)))
+  return (x[0])
+print(nww2(7,20))
+
+#----------------------------------------------------------
+
+
+
+def lcm(x, y):
+   if x > y:
+       z = x
+   else:
+       z = y
+
+   while(True):
+       if((z % x == 0) and (z % y == 0)):
+           lcm = z
+           break
+       z += 1
+
+   return lcm
+print(lcm(7,20))
