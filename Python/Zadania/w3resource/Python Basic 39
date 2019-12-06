@@ -1,0 +1,15 @@
+"""
+Write a Python program to compute the future value of a specified principal amount, rate of interest, and a number of years.
+
+Napisz program w języku Python, który obliczy przyszłą wartość określonej kwoty głównej, stopy procentowej i liczby lat.
+Test Data : amt = 10000, int = 3.5, years = 7
+Expected Output : 12722.79
+
+"""
+k0=10000
+n=7
+r=3.5
+
+k=k0*(1+(r/100))**n
+
+print(round(k,2))
