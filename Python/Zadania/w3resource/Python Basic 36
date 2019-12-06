@@ -4,7 +4,7 @@ Write a Python program to add two objects if both objects are an integer type.
 Napisz program w języku Python, który doda dwa obiekty, jeśli oba obiekty są liczbami całkowitymi.
 
 """
- 
+  
 def suma(x,y):
   if type(x) == int and type(y) == int:
     return (x+y)
