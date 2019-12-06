@@ -1,0 +1,16 @@
+#-*- coding: utf8 -*-
+
+"""
+Write a Python program to sum of three given integers. However, if two values are equal sum will be zero.
+
+Napisz program w języku Python do sumy trzech podanych liczb całkowitych. Jeśli jednak dwie wartości są równe, suma wyniesie zero.
+"""
+
+def suma(x,y,z):
+  if x == y or x == z or y == z:
+    return 0
+  else:
+    return (x+y+z)
+
+print(suma(1,2,3))
+print(suma(4,5,5))
