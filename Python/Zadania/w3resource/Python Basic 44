@@ -1,0 +1,10 @@
+"""
+Write a Python program to locate Python site-packages.
+
+Napisz program w języku Python, który zlokalizuje Python site-packages.
+
+"""
+
+import sys
+site_packages = next(p for p in sys.path if 'site-packages' in p)
+print (site_packages)
