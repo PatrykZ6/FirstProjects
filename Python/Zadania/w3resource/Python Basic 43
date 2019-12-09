@@ -1,0 +1,13 @@
+"""
+Write a Python program to get OS name, platform and release information.
+
+Napisz program w języku Python, który uzyska nazwę systemu operacyjnego, informacje o platformie i wersji.
+
+"""
+
+import os
+import platform
+
+print('OS name:',os.name)
+print('Platform:',platform.system())
+print('Release:',platform.release())
