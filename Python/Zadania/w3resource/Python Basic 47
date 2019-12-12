@@ -1,0 +1,9 @@
+"""
+Write a python program to get the path and name of the file that is currently executing.
+
+Napisz program w języku Python, który uzyska ścieżkę i nazwę aktualnie wykonywanego pliku.
+
+"""
+
+import os
+print(os.path.realpath(__file__))
