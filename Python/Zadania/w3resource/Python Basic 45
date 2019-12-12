@@ -1,0 +1,9 @@
+"""
+Write a python program to call an external command in Python.
+
+pisz program w języku Python, który wywoła zewnętrzne polecenie w języku Python.
+
+"""
+
+from subprocess import call
+call(["ls", "-l"])
