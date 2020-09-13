@@ -1,0 +1,10 @@
+"""
+Write a Python program to list all files in a directory in Python.
+
+Napisz program w Pythonie, który wyświetli listę wszystkich plików w katalogu w Pythonie.
+
+"""
+import os
+print(os.listdir())
+print(os.getcwd())
+print(os.listdir())
