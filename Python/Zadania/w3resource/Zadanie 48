@@ -1,0 +1,12 @@
+"""
+Write a Python program to parse a string to Float or Integer.
+
+Napisz program w Pythonie, który sparsuje ciąg znaków do wartości typu Float lub Integer.
+
+"""
+
+n = "20.21"
+print(float(n))
+print(type(float(n)))
+print(int(float(n)))
+print(type(int(float(n))))
