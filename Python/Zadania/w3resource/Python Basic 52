@@ -1,0 +1,26 @@
+"""
+Write a Python program to print to stderr.
+
+Napisz program w Pythonie, który wydrukuje srderr
+https://www.geeksforgeeks.org/how-to-print-to-stderr-and-stdout-in-python/
+"""
+
+import sys
+
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
+eprint("abc", "efg", "xyz", sep="--")
+
+#-----------------------------------
+
+import os, sys
+
+def obrazki(*a):
+    print(*a, file = sys.stderr)
+
+if os.path.exists("/home/plik.txt"):
+    plik=open("/home/plik.txt")
+    print(plik.read())
+else:
+    obrazki("Brak pliku!")
