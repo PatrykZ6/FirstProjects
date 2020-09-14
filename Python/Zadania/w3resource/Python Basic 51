@@ -1,0 +1,20 @@
+"""
+Write a Python program to determine profiling of Python programs.
+Note: A profile is a set of statistics that describes how often and for how long various parts of the program executed. These statistics can be formatted into reports via the pstats module.
+
+Napisz program w języku Python, który określi profilowanie programów w języku Python. Uwaga: Profil to zestaw statystyk opisujących, jak często i jak długo były wykonywane różne części programu. Te statystyki można sformatować w raportach za pośrednictwem modułu pstats.
+
+"""
+import cProfile
+
+def test(x):
+  p=0
+  for i in range(x):
+    p*=2
+    p+=1   
+  return p
+
+c=23479
+print(test(c))
+
+cProfile.run("test(c)")
