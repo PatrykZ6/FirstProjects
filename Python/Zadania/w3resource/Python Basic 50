@@ -1,0 +1,11 @@
+"""
+Write a Python program to print without newline or space.
+
+Napisz program w pythonie, który wyświetli wyniki pętli w jednej linii.
+"""
+
+x=1
+for i in (range(9)):
+  print(x, end="")
+  x+=1
+print("\n")
