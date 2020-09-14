@@ -1,0 +1,10 @@
+"""
+Write a python program to access environment variables.
+
+Napisz program w Pythonie, który uzyska dostęp do zmiennych środowiskowych.
+"""
+
+import os
+print(os.environ)
+print(os.environ['HOME'])
+print(os.environ['PATH'])
