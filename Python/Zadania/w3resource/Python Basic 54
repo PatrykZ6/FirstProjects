@@ -1,0 +1,9 @@
+"""
+Write a Python program to get the current username.
+
+Napisz program w Pythonie, który wyświetli aktualną nazwę użytkownika.
+"""
+
+import getpass
+
+print (getpass.getuser())
